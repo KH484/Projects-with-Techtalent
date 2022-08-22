@@ -1,0 +1,29 @@
+
+
+	<script>
+		function myFunction() {
+			//creating variables to use as parameters in the function
+            let txt = document.getElementById('txt').value
+            let txt1 = document.getElementById('txt1').value
+
+            // create a paragraph element
+			let para = document.createElement("p");
+            let heading = document.createElement("h1");
+
+			// add some text to it
+			para.appendChild(document.createTextNode(txt));
+            heading.appendChild(document.createTextNode(txt1));
+
+			// add it to the body of the html
+			document.body.appendChild(para);
+            document.body.appendChild(heading);
+
+			// just resets the text area that was originally created
+			document.getElementById('txt').value = "";
+            document.getElementById('txt1').value = "";
+
+            
+		}
+	</script>
+
+</html>

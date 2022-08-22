@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+		<title>Example</title>
+	</head>
+	
+	<body>
+		<button class="myclass" id="mybutton"onclick="myFunction('')">Click Me</button>
+		<br><br>
+		<textarea id="txt" rows="1" cols="50"></textarea>
+		<textarea id="txt2" rows="1" cols="50"></textarea>
+		<p></p>
+
+	</body>
+
+	<script>
+		var count = 0;
+
+		function deletepost(elem) {
+			var obj = document.getElementById(id)
+    			obj.remove();
+		}
+
+
+
+		function myFunction(data) {
+			let para = document.createElement("p");
+			para.appendChild(document.createTextNode(data));
+			let btn = document.createElement('button');
+			btn.appendChild(document.createTextNode('Del'));
+			let art = document.createElement("article");
+			count = count + 1;
+			art.appendChild(para);
+			art.appendChild(btn);
+			art.setAttribute("id", count); 
+			btn.setAttribute('onclick', "this.parentElement.remove();");
+			
+		
+			let elem = document.getElementsByTagName('article')[0];
+			document.getElementsByTagName('body')[0].insertBefore(art, elem);
+			document.getElementById('txt').value = "";
+		}
+	</script>
+
+</html>

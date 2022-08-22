@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="KWStyle.css"/><!--Link to the style sheet-->
+
+        <script src="kwjavascript.js"></script><!--Link to the JS file-->
+
+        <title> 
+
+            <span class="logo">SH</span>
+            <span class="name"> SARAH HOLMES</span> <!--Title of the first page-->
+            
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Change depending on device window size-->
+
+    </head>
+        
+    <body>
+
+        <header class="logo-header"> <!--Header section with particular styling for the branding incluidng the nav menu-->
+
+            <h1>
+                <span class="logo">SH</span>
+                <span class="name"> SARAH HOLMES</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav"> <!--Navigation menu on the side-->
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Home Page.html">About</a> <!--List of menu items-->
+                <a href="Blog.html">Blog</a>
+                <a href="Repertoire.html">Repertoire</a>
+                <a href="Contact.html">Contact</a>
+
+            </div>
+                    
+            <div id="main" class = "openNav"> <!--Navigation menu programme on the click-->
+
+                <span style="font-size:30px; position:fixed; right:20px; cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            </div>
+            
+        </header>
+
+        <section class = "Title">BLOG</section> <!--Styling for the section-->
+
+            <form class= "main_box" name="myForm" action="/page.php" onsubmit="return validateForm()" method="post" > <!--Link to JS to validate the form on the click of the submit-->
+
+                Title: <input type="text" id = "title" name="title" placeholder="Title of the post"> 
+                <br>
+                Author: <input type="text" id = "author" name="author" placeholder="Author name">
+                <br>
+                Blog: <textarea id="text" name="text" rows="4" cols="50" placeholder="Write your blog post here"></textarea>
+                <br>
+                Upload a photo: <input id = "photo" type = "file" name = "photo" class="labels">
+
+                <input class = "send" type="submit" value="Submit">
+            
+            </form>
+        
+        </section>
+
+        <section class = "Title">NEW POSTS <!--Styling for the new section-->
+
+            <div class= "main_box" id="blog_post"></div> <!--Styling for the new section and where the new post will show-->
+
+        </section>
+
+        <section class = "Title">RECENT POSTS  <!--Styling for the new section-->
+
+            <div class= "main_box"> <!--Styling for the new section-->
+
+                <H3>Artist Who Code</H3>
+
+                <p>Many Artists are now enjoying a career in software development as a way to fund their freelance artistic endevours.  <br>
+                Artists Who Code are a facebook group where artists can share their stories and interact with other people who are freelance <br> 
+                in the arts whilst working as a software developer. <br>  They run workshops on various interesting topics <br>
+                for example how to find work as a freelance software developer and what this might involve.<br>  
+
+                <img src="IMG_2919.jpg" width="400" alt="Actress in costume whilst coding"> <!--Blog image-->
+                
+                <br>
+                <p> For More information on Artist Who Code:</p>
+        
+                <ul class="list"> <!--unordered list for the links-->
+                
+                    <br>
+                    <li><a target=_blank href="https://www.linkedin.com/company/artistswhocode?original_referer=https%3A%2F%2Fwww.google.com%2F" >LinkedIn Artists Who Code</a></li>
+                    <br>
+                    <li><a target=_blank href="https://www.instagram.com/artistswhocode/?hl=en" >Instagram Artists Who Code</a></li>
+                    <br>
+
+                </ul>    
+        
+            </div>
+
+        </section>
+
+        <button class="colour" onclick="colourChange()">Click Me!!</button> <!--Background change button-->
+
+    </body>
+
+    <footer>
+
+        <h1  class="footer">
+            <span class="logo-footer">SH</span> <!--Repeat of branding / logo at the bottom-->
+            <span class="name-footer"> SARAH HOLMES</span>
+            <br>
+            <span class="copyright">Copyright Sarah Holmes 2022.  All Rights Reserved.</span>
+        </h1>
+
+    </footer>
+
+</html>

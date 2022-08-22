@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="KWStyle.css"/> <!--Link to the style sheet-->
+
+        <script src="kwjavascript.js"></script> <!--Link to the JS file-->
+
+        <title> 
+            <span class="logo">SH</span>
+            <span class="name"> SARAH HOLMES</span> <!--Title of the first page-->
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Change depending on device window size-->
+
+    </head>
+        
+    <body>
+
+        <header class="logo-header"> <!--Header section with particular styling for the branding incluidng the nav menu-->
+
+            <h1>
+                <span class="logo">SH</span>
+                <span class="name"> SARAH HOLMES</span>
+            </h1>
+        
+            <div id="mySidenav" class="sidenav"> <!--Navigation menu on the side-->
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Home Page.html">About</a> <!--List of menu items-->
+                <a href="Blog.html">Blog</a>
+                <a href="Repertoire.html">Repertoire</a>
+                <a href="Contact.html">Contact</a>
+
+            </div>
+                    
+            <div id="main" class = "openNav"> <!--Navigation menu programme on the click-->
+                <span style="font-size:30px; position:fixed; right:20px; cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            
+        </header>
+        
+        <section class = "Title">CONTACT</section> <!--Styling for the section title-->
+
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain"> <!--Sending the form-->
+
+            <section class = "main_box"> <!--Styling for the section-->
+
+                <div id = First-Name> <!--First name text box-->
+                    <label for ="First Name" class="labels">First Name:</label>
+                    <input type = "text" name="First Name" id="First Name" placeholder="Enter your first name here" class="labels"required> 
+                </div>
+
+                <br>
+
+                <div id = Last-Name> <!--Last name text box-->
+                    <label for ="Last Name" class="labels">Last Name:</label>
+                    <input type = "text" name="Last Name" id="Last Name" placeholder="Enter your last name here" class="labels"required> 
+                </div>
+
+                <br>
+
+                <div id = Email> <!--Email text box-->
+                    <label for ="Email" class="labels">Email Address:</label>
+                    <input type = "Email" name="Email" id="Email" placeholder="Enter your email address" class="labels"required>
+                </div>
+
+                <br>
+
+                <div id = Subject> <!--subject text box-->
+                    <label for ="Subject" class="labels">Subject:</label>
+                    <input type = "text" name="Subject" id="Subject" placeholder="Text" class="labels"required> 
+                </div>
+
+                <br>
+
+                <div id="Message"> <!--Message text box-->
+                    <label for="Message" class="labels">Message:</label>
+                    <br> 
+                    <textarea id="Message" class="labels" name="Message" rows="10" cols="50" placeholder="Subject"></textarea> 
+                </div>
+
+                <br>
+
+                <div> <!--Subscribe text box-->
+                    <label for="Subscribe">Sign up to the <span class="brand">SH</span> newsletter here for news and updates:</label> 
+                    <label for ="subcribe">Subscribe</label>
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                </div>
+
+                <br>
+
+                <div> <!--Check to agree to terms and conditions-->
+                    <label for="T&C">I agree to our terms and conditions and privacy policy: </label> 
+                    <label for ="T&C">T&C</label>
+                    <input type="checkbox" name="T&C" id="T&C">
+                    <br>
+                </div>
+
+                <br>
+                    <input class= "send" type="submit" value="Send"> <!--submit button-->
+                <br>
+
+            </section>
+
+        </form>
+
+        <br>
+
+        <button class="colour" onclick="colourChange()">Click Me!!</button> <!--Button to change the background colour-->
+
+    </body>
+
+    <footer>
+
+        <h1  class="footer">
+            <span class="logo-footer">SH</span> <!--Styling to match the header logo-->
+            <span class="name-footer"> SARAH HOLMES</span>
+            <br>
+            <span class="copyright">Copyright Sarah Holmes 2022.  All Rights Reserved.</span>
+        </h1>
+
+    </footer>
+
+</html>

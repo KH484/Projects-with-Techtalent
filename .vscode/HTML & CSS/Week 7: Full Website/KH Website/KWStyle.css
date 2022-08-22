@@ -1,0 +1,241 @@
+/* body text styling */
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    padding: 15px;
+    background: white;
+}
+
+/* Header name text styling */
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    font-size: 30px;
+    color: #210b62;
+    font-weight: lighter;
+
+}
+
+/* Header logo text styling */
+
+.logo-header {
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between; 
+    background-color:white;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    text-align: left;
+}
+
+/* Header logo text styling */
+
+.logo {
+    font-family: snell roundhand, cursive;
+    font-size: 80px;
+    font-weight: lighter;
+    color: #210b62;
+}
+
+/* Main text box styling */
+
+.main_box {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 22px;
+    margin:auto;
+    width: 1200px;
+    background-color: #e9edf3;
+    border-radius: 10px;
+    padding: 90px 0px 80px 0px;
+    color: #210b62;
+    font-family: 'Courier New', Courier, monospace
+    
+}
+
+/* In the list - no bullet points */
+
+.list{
+    list-style: none;
+}
+
+/* Blog box smaller text */
+
+.blog {
+    font-size: 12;
+}
+
+/* Table styling */
+
+table {
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    margin:auto;
+    width: 1200px;
+    background-color: #e9edf3;
+    border-radius: 10px;
+    color: #210b62;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    table-layout: fixed;
+    padding: 90px 20px 90px 20px;
+}
+
+td {
+    letter-spacing: 5px;
+}
+
+.Title {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 50px;
+    margin-top: 110px;
+    color: #210b62;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.contact {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 22px;
+    margin:auto;
+    width: 1200px;
+    padding: 40px 0px 80px 0px;
+    color: #210b62;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.send{
+    color: white;
+    display: block;
+    width: 25%;
+    border: single;
+    background-color: #3656a0;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+
+.colour{
+    margin-top: 80px;
+    color: white;
+    display: block;
+    width: 100%;
+    border: single;
+    background-color: #345cb9;
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.repertoire {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+    line-height: 1.2;
+    font-size: 22px;
+    margin: auto;
+    width: 1200px;
+    background-color: #e9edf3;
+    border-radius: 10px;
+    padding: 120px 0px 80px 0px;
+    color: #210b62;
+    font-family: 'Courier New', Courier, monospace
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: white; /* White*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 200px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+  /* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #1b055c;
+    display: block;
+    transition: 0.3s;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+    text-align: center;
+
+}
+
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #635db9;
+}
+
+  /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.footer {
+
+    z-index: 20;
+    background-color:white;
+    width: 100%;
+    bottom:0px;
+    margin-top: 10px;
+
+}
+
+.copyright {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #210b62;
+}
+
+.name-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    font-size: 15px;
+    color: #210b62;
+    font-weight: lighter;
+
+}
+
+.logo-footer {
+    font-family: snell roundhand, cursive;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #210b62;
+}
+
+
+
