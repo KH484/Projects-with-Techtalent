@@ -1,0 +1,82 @@
+
+public class Week10Game {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//using methods from other classes to run the game
+		
+		gameInteractions interactions4Game = new gameInteractions();
+		
+		
+		Map map = new Map();
+		
+		
+		interactions4Game.start();
+
+		interactions4Game.characterSelect();
+		
+		map.playerStart();
+		
+		
+		//loop to make sure the game runs continuously until the exit or the locations are found
+		
+		while (map.getCurrentX() < map.getX() && map.getCurrentY() < map.getY()) {
+		
+			map.chooseDirection();
+			
+			map.move();
+			
+			//location 1 Rose Garden
+			
+			if (map.getCurrentX() == 3 && map.getCurrentY() == 6) {
+				
+				interactions4Game.roseGarden();
+				
+				interactions4Game.Points();
+				
+			//location 2 Greenhouse Rescue
+			
+			} else if (map.getCurrentX() == 7 && map.getCurrentY() == 4) {
+				
+				interactions4Game.Greenhouse();
+				
+				interactions4Game.Points();
+				
+				map.chooseDirection();
+				
+				map.move();
+				
+				if (map.getCurrentX() >= 7 || map.getCurrentY() >= 4 || map.getCurrentX() < 7 || map.getCurrentY() < 4) {
+						
+						System.out.println("Congratulations, you have found the exit and you have survived!");
+						
+						System.exit(0);
+				}
+				
+			}
+		
+		}
+	}
+}
+
+
+
+
+		
+
+
+	
+
+		
+		
+		
+		
+
+
+
+
+
+
+
+

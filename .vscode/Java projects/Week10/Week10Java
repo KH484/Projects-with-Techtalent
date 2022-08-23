@@ -1,0 +1,23 @@
+import java.util.HashMap;
+
+public class Week10Java {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		HashMap<String, Integer> Bouquet = new HashMap<String, Integer>();
+		
+		Bouquet.put("Sunflowers", 3);
+		Bouquet.put("Hydrangeas", 4);
+		Bouquet.put("Roses", 2);
+		Bouquet.put("Eucalyptus", 3);
+		
+		
+		for (String i : Bouquet.keySet()) {
+
+            System.out.println("My bouquet has " + Bouquet.get(i) + " " + i);
+		}
+	}
+
+}
