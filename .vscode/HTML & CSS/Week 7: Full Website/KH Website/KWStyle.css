@@ -51,7 +51,7 @@ body {
     width: 1200px;
     background-color: #e9edf3;
     border-radius: 10px;
-    padding: 90px 0px 80px 0px;
+    padding: 60px 20px 60px 20px;
     color: #210b62;
     font-family: 'Courier New', Courier, monospace
     
@@ -83,7 +83,7 @@ table {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     table-layout: fixed;
-    padding: 90px 20px 90px 20px;
+    padding: 60px 20px 60px 20px;
 }
 
 td {
@@ -97,6 +97,23 @@ td {
     margin-top: 110px;
     color: #210b62;
     font-family: 'Courier New', Courier, monospace
+}
+
+.Central_Title {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px;
+    margin-top: 50px;
+    color: #210b62;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.Table_Header {
+    text-align: center;
+    font-size: 40px;
+    color: #210b62;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 40px;
 }
 
 .contact {
